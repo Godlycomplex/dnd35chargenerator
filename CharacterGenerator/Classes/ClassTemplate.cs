@@ -1,14 +1,19 @@
 ﻿namespace CharacterGenerator.Classes
 {
-    class ClassTemplate
+    public interface IClassTemplate
     {
-        int[] BaseAttackBonus { get; set; }
-        int[] ReflexSave { get; set; }
-        int[] FortificationSave { get; set; }
-        int[] WillSave { get; set; }
-        int HitDice { get; set; }
-        int SkillPoints { get; set; }
-        bool[] AbilityStatPoint { get; set; }
-        int[] Feats { get; set; }
+
+    }
+
+    public abstract class ClassTemplate : IClassTemplate
+    {
+        public int[][] baseAttackBonus { get; set; }
+        public int[] reflexSave { get; }
+        public int[] fortificationSave { get; }
+        public int[] willSave { get; }
+        public int hitDice { get; }
+        public int skillPoints { get; }
+        public bool[] abilityStatPoint { get; }
+        public int[] feats { get; }
     }
 }
