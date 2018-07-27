@@ -8,12 +8,14 @@
     public abstract class ClassTemplate : IClassTemplate
     {
         public int[][] baseAttackBonus { get; set; }
-        public int[] reflexSave { get; }
-        public int[] fortificationSave { get; }
-        public int[] willSave { get; }
-        public int hitDice { get; }
-        public int skillPoints { get; }
-        public bool[] abilityStatPoint { get; }
-        public int[] feats { get; }
+        public int[] reflexSave { get; set; }
+        public int[] fortificationSave { get; set; }
+        public int[] willSave { get; set; }
+        public int hitDice { get; set; }
+        public int skillPoints { get; set; }
+        public bool[] abilityStatPoint { get; set; }
+        public int[] feats { get; set; }
+        public int[][] spellsPerDay { get; set; }
     }
 }
+	
